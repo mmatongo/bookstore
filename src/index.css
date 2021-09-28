@@ -1,53 +1,53 @@
 .nav-title {
-    display: flex;
+  display: flex;
 }
 
 .nav-main {
-    font-size: 1.875rem;
-    color: #0290ff;
+  font-size: 1.875rem;
+  color: #0290ff;
 }
 
 .books-row {
-    display: flex;
+  display: flex;
 }
 
 .status-column {
-    width: 400px;
+  width: 400px;
 }
 
 .progress-column {
-    display: flex;
+  display: flex;
 }
 
 .completion-status {
-    width: 250px;
+  width: 250px;
 }
 
 .book-progress {
-    width: 300px;
+  width: 300px;
 }
 
 .book-title {
-    width: 360px;
-    margin-right: 40px;
+  width: 360px;
+  margin-right: 40px;
 }
 
 .nav-links ul {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .nav-links ul li {
-    padding: 0 15px;
-    color: #121212;
+  padding: 0 15px;
+  color: #121212;
 }
 
 .categories {
-    width: 210px;
-    margin-right: 40px;
+  width: 210px;
+  margin-right: 40px;
 }
 
 .add-button {
-    width: 250px;
+  width: 250px;
 }
