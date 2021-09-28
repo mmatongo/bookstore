@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav-title {
+  display: flex;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-main {
+  font-size: 1.875rem;
+  color: #0290ff;
+}
+
+.books-row {
+  display: flex;
+}
+
+.status-column {
+  width: 400px;
+}
+
+.progress-column {
+  display: flex;
+}
+
+.completion-status {
+  width: 250px;
+}
+
+.book-progress {
+  width: 300px;
+}
+
+.book-title {
+  width: 360px;
+  margin-right: 40px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav-links ul li {
+  padding: 0 15px;
+  color: #121212;
+}
+
+.categories {
+  width: 210px;
+  margin-right: 40px;
+}
+
+.add-button {
+  width: 250px;
 }
