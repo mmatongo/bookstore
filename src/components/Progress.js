@@ -1,16 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Progress = ({ chapter }) => (
+const Progress = () => (
   <div className="book-progress">
     <p>CURRENT CHAPTER</p>
-    <p className="book-progress-chapter">{chapter}</p>
+    <p className="book-progress-chapter">Introduction</p>
     <button type="button">UPDATE PROGRESS</button>
   </div>
 );
-
-Progress.propTypes = {
-  chapter: PropTypes.string.isRequired,
-};
 
 export default Progress;
