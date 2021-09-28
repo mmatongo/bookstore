@@ -51,3 +51,7 @@
 .add-button {
   width: 250px;
 }
+
+.add-book {
+  display: flex;
+}
