@@ -272,7 +272,7 @@ body {
   padding: 10px;
 }
 
-.header > div {
+.top-containter > div {
   display: flex;
   justify-content: space-between;
 }
