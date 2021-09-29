@@ -81,7 +81,6 @@ body {
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -95,7 +94,6 @@ body {
   width: 2.938rem;
   height: 2.438rem;
   margin: 0.063rem 7.063rem 0 0.688rem;
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -227,7 +225,6 @@ body {
   height: 1.125rem;
   margin: 0 4rem 0 0;
   opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -283,4 +280,8 @@ body {
 .underconstruction {
   display: flex;
   place-content: center;
+}
+
+.main-font {
+  font-family: 'Montserrat', sans-serif;
 }
