@@ -7,8 +7,8 @@ import { removeBook } from '../redux/books/books';
 const BookOpts = ({ id }) => {
   const dispatch = useDispatch();
 
-  const RemoveBook = () => {
-    dispatch(removeBook({ id }));
+  const RemoveBook = async () => {
+    dispatch(removeBook(id));
   };
 
   return (

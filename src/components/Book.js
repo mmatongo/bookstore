@@ -8,12 +8,12 @@ import Progress from './Progress';
 
 const Book = (
   {
-    id, title, author, category,
+    id, title, category,
   },
 ) => (
   <div className="books-row">
     <div className="status-column">
-      <BookData title={title} author={author} category={category} />
+      <BookData title={title} category={category} />
       <BookOpts id={id} />
     </div>
     <div className="progress-column">
@@ -27,7 +27,6 @@ Book.propTypes = ({
   id: PropTypes.number,
   category: PropTypes.string,
   title: PropTypes.string,
-  author: PropTypes.string,
 }).isRequired;
 
 export default Book;

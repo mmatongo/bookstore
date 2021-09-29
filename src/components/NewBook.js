@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
+import pullBooks from './Slice';
 
 import { addBook } from '../redux/books/books';
 
 const NewBook = () => {
   const [bookTitle, setTitle] = useState('');
-  const [bookAuthor, setAuthor] = useState('');
   const [bookCategory, setCategory] = useState('');
 
   const handleCategoryChange = (e) => {
@@ -17,26 +17,22 @@ const NewBook = () => {
     setTitle(e.target.value);
   };
 
-  const handleAuthorChange = (e) => {
-    setAuthor(e.target.value);
-  };
-
   const dispatch = useDispatch();
 
-  const submitToStore = (e) => {
+  const submitToStore = async (e) => {
     e.preventDefault();
 
     const newBook = {
       id: uuidv4(),
-      author: bookAuthor,
       title: bookTitle,
       category: bookCategory,
     };
 
     dispatch(addBook(newBook));
-    setAuthor('');
     setTitle('');
     setCategory('');
+    await dispatch(pullBooks());
+    document.location.reload(true);
   };
 
   return (
@@ -49,13 +45,6 @@ const NewBook = () => {
           placeholder="Book title"
           value={bookTitle}
           onChange={handleTitleChange}
-        />
-        <input
-          name="author"
-          className="author-input"
-          placeholder="Book author"
-          value={bookAuthor}
-          onChange={handleAuthorChange}
         />
         <select
           className="categories"
