@@ -47,7 +47,7 @@ const NewBook = () => {
           onChange={handleTitleChange}
         />
         <select
-          className="categories"
+          className="categories main-font"
           name="category"
           id="categories"
           value={bookCategory}

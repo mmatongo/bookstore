@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
-  <div className="header">
+  <div className="top-containter">
     <div className="nav-title">
       <div className="nav">
         <h1 className="nav-main">Bookstore CMS</h1>
